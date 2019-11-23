@@ -57,3 +57,14 @@ def ScoreFinder(x,y,z):
     else:
         playerscore = str(x[scorespot]) + ' got a score of ' + str(y[scorespot])
         return (playerscore)
+
+################################################
+########   Function 6 : Union          #########
+################################################
+    
+def Union(x,y):
+    list1 = list(x) + list(y)
+    for i in list1:
+        if list1.count(i) > 1:
+            list1.pop(list1.index(i))
+    return list1
