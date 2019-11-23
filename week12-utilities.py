@@ -41,3 +41,19 @@ def FindWordCount(x,y):
         if i == y:
             times += 1
     return times
+
+################################################
+########   Function 5 : ScoreFinder    #########
+################################################
+
+def ScoreFinder(x,y,z):
+    scorespot = -1
+    playerscore = ''
+    for i in x:
+        if i.lower() == z.lower():
+            scorespot = x.index(i)
+    if scorespot == -1:
+        return ('player not found')
+    else:
+        playerscore = str(x[scorespot]) + ' got a score of ' + str(y[scorespot])
+        return (playerscore)
