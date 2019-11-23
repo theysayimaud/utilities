@@ -68,3 +68,18 @@ def Union(x,y):
         if list1.count(i) > 1:
             list1.pop(list1.index(i))
     return list1
+
+################################################
+########   Function 7 : Intersection   #########
+################################################
+
+def Intersection(x,y):
+    intersected = []
+    list1 = list(x) + list(y)
+    for i in list1:
+        if list1.count(i) > 1:
+            intersected.append(i)
+    for i in intersected:
+        if intersected.count(i) > 1:
+            intersected.pop(intersected.index(i))
+    return intersected
