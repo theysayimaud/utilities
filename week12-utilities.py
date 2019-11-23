@@ -30,3 +30,14 @@ def UpdateString(x,y,z):
     for i in original:
         updated += i
     return (updated)
+
+################################################
+########   Function 4 : FindWordCount  #########
+################################################
+
+def FindWordCount(x,y):
+    times = 0
+    for i in x:
+        if i == y:
+            times += 1
+    return times
