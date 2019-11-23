@@ -8,3 +8,12 @@
 
 def PrintOutput(x):
     print("OUTPUT", x)
+
+################################################
+########   Function 2 : LoadFile       #########
+################################################
+
+def LoadFile(x):
+    lines = open(x, "r")
+    listedboi = lines.splitlines()
+    return (listedboi)
