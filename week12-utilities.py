@@ -83,3 +83,21 @@ def Intersection(x,y):
         if intersected.count(i) > 1:
             intersected.pop(intersected.index(i))
     return intersected
+
+################################################
+########   Function 8 : NotIn          #########
+################################################
+
+def NotIn(x,y):
+    notinhere = []
+    temp = []
+    list1 = list(x) + list(y)
+    for i in list1:
+        if list1.count(i) == 1:
+            notinhere.append(i)
+    for i in notinhere:
+        if (i in y):
+            temp.append(i)
+    for i in temp:
+        notinhere.remove(i)
+    return notinhere  
